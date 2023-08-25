@@ -19,6 +19,19 @@ class Llama:
     def __str__(self):
         return f"{self.name} is a {self.species}."
 
+    @property
+    def chip_number(self):
+        try:
+            return self.__chip_number
+        except AttributeError:
+            return 0
+        
+    @chip_number.setter
+    def chip_number(self, number):
+        if type(number) is float:
+            self.__chip_number = number
+        else:
+            raise TypeError('Please provide a float number value for the Chip Number')
     
 class Donkeys:
 
