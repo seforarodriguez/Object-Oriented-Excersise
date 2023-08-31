@@ -6,7 +6,11 @@ class PettingZoo:
 
     def adding_animals_to_attraction(self, animal):
         self.animals.append(animal)
-        
+    
+    @property #getter
+    def last_critter_added(self):
+        reversed_list = self.animals.reverse(self.animals)
+        print(f"Last animal added was {reversed_list[0]}")
 
 class SnakePit:
     def __init__(self,name, description):

@@ -2,7 +2,7 @@ from datetime import date
 
 class Llama:
 
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_number):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -11,6 +11,7 @@ class Llama:
         self.walking = True
         self.shift = shift
         self.food = food
+        self.__chip_number = chip_number
     
 
     def feed(self):
@@ -18,20 +19,14 @@ class Llama:
 
     def __str__(self):
         return f"{self.name} is a {self.species}."
-
-    @property
+    
+    @property #getter for the chipnumber
     def chip_number(self):
-        try:
-            return self.__chip_number
-        except AttributeError:
-            return 0
+        return self.__chip_number
         
-    @chip_number.setter
+    @chip_number.setter #setter for the chip number
     def chip_number(self, number):
-        if type(number) is float:
-            self.__chip_number = number
-        else:
-            raise TypeError('Please provide a float number value for the Chip Number')
+        pass
     
 class Donkeys:
 
