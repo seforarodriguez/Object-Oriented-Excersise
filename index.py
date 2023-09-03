@@ -34,7 +34,7 @@ varmint_village.adding_animals_to_attraction(miss_furry)
 varmint_village.adding_animals_to_attraction(mr_fuzzy)
 varmint_village.adding_animals_to_attraction(ms_donke)
 
-print(varmint_village.last_critter_added)
+# print(varmint_village.last_critter_added)
 # snakeru = SnakePit("Snakeru Playground", "The best place to get bitten")
 # snakeru.adding_animals_to_attraction(Freida)
 # snakeru.adding_animals_to_attraction(Lola)
@@ -50,7 +50,13 @@ print(varmint_village.last_critter_added)
 # wettingland.adding_animals_to_attraction(stanky)
 # wettingland.adding_animals_to_attraction(kanky)
 
+Freida.run()
+Freida.swim()
 
+methods_in_class = dir(Freida)
+
+for method in methods_in_class:
+    print(method)
 
 
 
