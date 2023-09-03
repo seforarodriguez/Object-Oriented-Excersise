@@ -9,8 +9,9 @@ class PettingZoo:
     
     @property #getter
     def last_critter_added(self):
-        reversed_list = self.animals.reverse(self.animals)
-        print(f"Last animal added was {reversed_list[0]}")
+        animals = self.animals
+        last_one = animals[0].name
+        return last_one
 
 class SnakePit:
     def __init__(self,name, description):

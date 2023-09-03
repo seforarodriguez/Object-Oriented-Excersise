@@ -1,30 +1,31 @@
-from swimming import Goose, Crocodile, Hippopotamus, Swan, RatSnakes, Flamingos, Copperheads
-from slithering import Mallards, Goldfish, Clownfish, Starfish
-from walking import Llama, Donkeys, Unicorns, Goats, Burro
+from animals import Goose, Crocodile, Hippopotamus, Swan, RatSnakes, Flamingos, Copperheads
+from animals import Mallards, Goldfish, Clownfish, Starfish
+from animals import Llama, Donkeys, Unicorns, Goats, Burro
 from attractions import PettingZoo, SnakePit, Wetlands
 
 
 # Creation of the different instances for the walking animals
 
 miss_fuzz = Llama("Miss Fuzz", "domestic llama", "Morning", "Llama Chow", "5559999" )
-miss_furry = Goats("Miss Furry", "domestic Goat", "Midday", "Grass" )
-mr_fuzzy = Unicorns("Miss Fuzzy", "domestic Unicorn", "Afternoon", "Glitter" )
-ms_donke = Donkeys("Miss Donke", "domestic donkey", "Midday", "Donkey food" )
+miss_furry = Goats("Miss Furry", "domestic Goat", "Midday", "Grass", "888888" )
+mr_fuzzy = Unicorns("Miss Fuzzy", "domestic Unicorn", "Afternoon", "Glitter", "54854" )
+ms_donke = Donkeys("Miss Donke", "domestic donkey", "Midday", "Donkey food","111222" )
+ms_donke = Burro("Burrito Sabanero", "savage donkey", "Midday", "Donkey food","222111" )
 
 # Instances for the different swimming animals
-Freida = Goose("Miss Freida", "domestic llama", "Goose Gummies" )
-Lola = Crocodile("Miss Lola", "domestic llama", "Bird Legs" )
-mr_Carlo = Hippopotamus("Mr Carlo", "domestic llama", "Hippo Soda" )
-miss_carla = Swan("Miss Carla", "domestic llama",  "Swany Cake" )
-miss_fuzzy = RatSnakes("Miss Fuzzy", "domestic llama", "Rats" )
-breakeba = Flamingos("Miss breakeba", "domestic llama", "Pink Glitter" )
-Furr_man = Copperheads("Mr Furr Man", "domestic llama", "Sparkling Watter" )
+Freida = Goose("Miss Freida", "domestic llama", "Goose Gummies","333555" )
+Lola = Crocodile("Miss Lola", "domestic llama", "Bird Legs","444555" )
+mr_Carlo = Hippopotamus("Mr Carlo", "domestic llama", "Hippo Soda","555666" )
+miss_carla = Swan("Miss Carla", "domestic llama",  "Swany Cake","666777" )
+miss_fuzzy = RatSnakes("Miss Fuzzy", "domestic llama", "Rats","777888" )
+breakeba = Flamingos("Miss breakeba", "domestic llama", "Pink Glitter","888999" )
+Furr_man = Copperheads("Mr Furr Man", "domestic llama", "Sparkling Watter","999191" )
 
 # Creation of instances for the different slithering animals
-miss_fuzzle = Mallards("Miss Fuzzle", "domestic Mallard", "Seaweed")
-stinky = Goldfish("Stinky", "savage Goldfish", "Seaweed")
-stanky = Clownfish("Stanky", "Nemo's Clownfish", "Seaweed")
-kanky = Starfish("Kannky", "Funny Starfish", "Seaweed")
+miss_fuzzle = Mallards("Miss Fuzzle", "domestic Mallard", "Seaweed","111191")
+stinky = Goldfish("Stinky", "savage Goldfish", "Seaweed","222292")
+stanky = Clownfish("Stanky", "Nemo's Clownfish", "Seaweed","333393")
+kanky = Starfish("Kannky", "Funny Starfish", "Seaweed","444494")
 
 # Creation of instances for the different attractions
 varmint_village = PettingZoo("Varmint Village", "the best place to have fun")
@@ -56,10 +57,10 @@ print(varmint_village.last_critter_added)
 # for animal in varmint_village.animals:
 #     print(f'{varmint_village.attraction_name} is where you will find animals like {animal.name} the {animal.species} in {varmint_village.attraction_name}')
 
-#this is printing all the animals per attraction and showing it in the console with the iteration
-print(f"{varmint_village.attraction_name} is where you will find amazing animals that you can pet such as:")
-for animal in varmint_village.animals:
-    print(f' * {animal.name} the {animal.species} ')
+# #this is printing all the animals per attraction and showing it in the console with the iteration
+# print(f"{varmint_village.attraction_name} is where you will find amazing animals that you can pet such as:")
+# for animal in varmint_village.animals:
+#     print(f' * {animal.name} the {animal.species} ')
 
 # print(f"{snakeru.attraction_name} is where you will find amazing animals that you can pet such as:")
 # for animal in snakeru.animals:
@@ -72,6 +73,3 @@ for animal in varmint_village.animals:
 # miss_fuzz.chip_number = 99999
 
 # print(miss_fuzz.chip_number)
-
-
-
