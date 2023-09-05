@@ -18,7 +18,7 @@ class SnakePit:
         self.attraction_name = name
         self.description = description
         self.animals = list()
-
+        
     def adding_animals_to_attraction(self, animal):
         self.animals.append(animal)
 

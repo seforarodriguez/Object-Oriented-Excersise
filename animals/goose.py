@@ -10,5 +10,5 @@ class Goose(Animal, Walking, Swimming):
         Walking.__init__(self)
     def honk(self):
         print("The goose honks. A lot!")
-    def __str__(self):
-        return f"{self.name} the Most Amazing Goose!"
+    # def __str__(self):
+    #     return f"{self.name} the Most Amazing Goose!"

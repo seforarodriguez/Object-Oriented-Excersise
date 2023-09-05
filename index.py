@@ -13,13 +13,13 @@ ms_donke = Donkeys("Miss Donke", "domestic donkey", "Midday", "Donkey food","111
 ms_donke = Burro("Burrito Sabanero", "savage donkey", "Midday", "Donkey food","222111" )
 
 # Instances for the different swimming animals
-Freida = Goose("Miss Freida", "domestic llama", "Goose Gummies","333555" )
-Lola = Crocodile("Miss Lola", "domestic llama", "Bird Legs","444555" )
-mr_Carlo = Hippopotamus("Mr Carlo", "domestic llama", "Hippo Soda","555666" )
-miss_carla = Swan("Miss Carla", "domestic llama",  "Swany Cake","666777" )
-miss_fuzzy = RatSnakes("Miss Fuzzy", "domestic llama", "Rats","777888" )
-breakeba = Flamingos("Miss breakeba", "domestic llama", "Pink Glitter","888999" )
-Furr_man = Copperheads("Mr Furr Man", "domestic llama", "Sparkling Watter","999191" )
+mr_Carlo = Hippopotamus("Mr Carlo", "domestic hippo", "Hippo Soda","555666" )
+miss_carla = Swan("Miss Carla", "domestic Swany",  "Swany Cake","666777" )
+miss_fuzzy = RatSnakes("Miss Fuzzy", "domestic RatSnake", "Rats","777888" )
+breakeba = Flamingos("Miss breakeba", "Pink Flamingo", "Pink Glitter","888999" )
+Furr_man = Copperheads("Mr Furr Man", "domestic Copperhead", "Sparkling Watter","999191" )
+Lola = Crocodile("Miss Lola", "domestic Croc", "Bird Legs","444555" )
+Freida = Goose("Miss Freida", "the Wild Goose", "Goose Gummies","333555" )
 
 # Creation of instances for the different slithering animals
 miss_fuzzle = Mallards("Miss Fuzzle", "domestic Mallard", "Seaweed","111191")
@@ -54,8 +54,8 @@ wettingland.adding_animals_to_attraction(kanky)
 
 
 
-for animal in varmint_village.animals:
-    print(f'{varmint_village.attraction_name} is where you will find animals like {animal.name} the {animal.species} in {varmint_village.attraction_name}')
+# for animal in varmint_village.animals:
+#     print(f'{varmint_village.attraction_name} is where you will find animals like {animal.name} the {animal.species} in {varmint_village.attraction_name}')
 
 #this is printing all the animals per attraction and showing it in the console with the iteration
 print(f"{varmint_village.attraction_name} is where you will find amazing animals that you can pet such as:")
@@ -71,14 +71,14 @@ for animal in wettingland.animals:
     print(animal)
 
 
-print(miss_fuzz.chip_number)
+# print(miss_fuzz.chip_number)
 
-print("These are the Methods and different examples of the Goose Class")
-Freida.run()
-Freida.swim()
+# print("These are the Methods and different examples of the Goose Class")
+# Freida.run()
+# Freida.swim()
 
-# This code is iterating through the methods in the Goose Class
-methods_in_class = dir(Freida)
+# # This code is iterating through the methods in the Goose Class
+# methods_in_class = dir(Freida)
 
-for method in methods_in_class:
-    print(method)
+# for method in methods_in_class:
+#     print(method)

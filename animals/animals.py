@@ -98,40 +98,40 @@ class Copperheads(Animal):
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
 class Flamingos(Animal):
 
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
 class RatSnakes(Animal):
 
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
 class Swan(Animal):
 
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
 class Hippopotamus(Animal):
 
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
 class Crocodile(Animal):
 
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
