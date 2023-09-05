@@ -15,7 +15,7 @@ class Animal:
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
     def __str__(self):
-        return f"{self.name} is a {self.species}."
+        return f"{self.name} the {self.species}."
     
     @property #getter for the chipnumber
     def chip_number(self):
@@ -24,14 +24,7 @@ class Animal:
     @chip_number.setter #setter for the chip number
     def chip_number(self, number):
         pass
-class Llama(Animal):
 
-    def __init__(self, name, species, shift, food, chip_number):
-        # Establish the properties of each animal
-        # with a default value
-        super().__init__(name, species, food, chip_number)
-        self.shift = shift
-        self.walking = True   
 class Donkeys(Animal):
 
     def __init__(self, name, species, shift, food, chip_number):
@@ -98,47 +91,40 @@ class Copperheads(Animal):
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
 class Flamingos(Animal):
 
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
 class RatSnakes(Animal):
 
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
 class Swan(Animal):
 
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
 class Hippopotamus(Animal):
 
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
 class Crocodile(Animal):
 
     def __init__(self, name, species, food, chip_number):
         # Establish the properties of each animal
         # with a default value
-        super().__init__(self, name, species, food)
-        self.swimming = True
-class Goose(Animal):
-
-    def __init__(self, name, species, food, chip_number):
-        # Establish the properties of each animal
-        # with a default value
-        super().__init__(self, name, species, food)
+        super().__init__(name, species, food, chip_number)
         self.swimming = True
