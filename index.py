@@ -1,7 +1,7 @@
 from animals import Goose, Crocodile, Hippopotamus, Swan, RatSnakes, Flamingos, Copperheads
 from animals import Mallards, Goldfish, Clownfish, Starfish
 from animals import Llama, Donkeys, Unicorns, Goats, Burro
-from attractions import PettingZoo, SnakePit, Wetlands
+from attractions import PettingZoo, WetLands, SnakePit
 
 
 # Creation of the different instances for the walking animals
@@ -29,27 +29,27 @@ kanky = Starfish("Kannky", "Funny Starfish", "Seaweed","444494")
 
 # Creation of instances for the different attractions
 varmint_village = PettingZoo("Varmint Village", "the best place to have fun")
-varmint_village.adding_animals_to_attraction(miss_fuzz)
-varmint_village.adding_animals_to_attraction(miss_furry)
-varmint_village.adding_animals_to_attraction(mr_fuzzy)
-varmint_village.adding_animals_to_attraction(ms_donke)
+varmint_village.add_animal(miss_fuzz)
+varmint_village.add_animal(miss_furry)
+varmint_village.add_animal(mr_fuzzy)
+varmint_village.add_animal(ms_donke)
 
 print(varmint_village.last_critter_added)
 
 snakeru = SnakePit("Snakeru Playground", "The best place to get bitten")
-snakeru.adding_animals_to_attraction(Lola)
-snakeru.adding_animals_to_attraction(miss_carla)
-snakeru.adding_animals_to_attraction(miss_fuzzy)
-snakeru.adding_animals_to_attraction(mr_Carlo)
-snakeru.adding_animals_to_attraction(breakeba)
-snakeru.adding_animals_to_attraction(Furr_man)
-snakeru.adding_animals_to_attraction(Freida)
+snakeru.add_animal(Lola)
+snakeru.add_animal(miss_carla)
+snakeru.add_animal(miss_fuzzy)
+snakeru.add_animal(mr_Carlo)
+snakeru.add_animal(breakeba)
+snakeru.add_animal(Furr_man)
+snakeru.add_animal(Freida)
 
-wettingland = Wetlands("Ocean Land", "Best place to play in the Summer")
-wettingland.adding_animals_to_attraction(miss_fuzzle)
-wettingland.adding_animals_to_attraction(stinky)
-wettingland.adding_animals_to_attraction(stanky)
-wettingland.adding_animals_to_attraction(kanky)
+wettingland = WetLands("Ocean Land", "Best place to play in the Summer")
+wettingland.add_animal(miss_fuzzle)
+wettingland.add_animal(stinky)
+wettingland.add_animal(stanky)
+wettingland.add_animal(kanky)
 
 
 
@@ -57,18 +57,14 @@ wettingland.adding_animals_to_attraction(kanky)
 # for animal in varmint_village.animals:
 #     print(f'{varmint_village.attraction_name} is where you will find animals like {animal.name} the {animal.species} in {varmint_village.attraction_name}')
 
-#this is printing all the animals per attraction and showing it in the console with the iteration
-print(f"{varmint_village.attraction_name} is where you will find amazing animals that you can pet such as:")
-for animal in varmint_village.animals:
-    print(animal)
 
-print(f"{snakeru.attraction_name} is where you will find amazing animals that you can pet such as:")
-for animal in snakeru.animals:
-    print(animal)
+# print(f"{snakeru.attraction_name} is where you will find amazing animals that you can pet such as:")
+# for animal in snakeru.animals:
+#     print(animal)
     
-print(f"{wettingland.attraction_name} is where you will find amazing animals that you can pet such as:")
-for animal in wettingland.animals:
-    print(animal)
+# print(f"{wettingland.attraction_name} is where you will find amazing animals that you can pet such as:")
+# for animal in wettingland.animals:
+#     print(animal)
 
 
 # print(miss_fuzz.chip_number)
@@ -82,3 +78,16 @@ for animal in wettingland.animals:
 
 # for method in methods_in_class:
 #     print(method)
+
+# remember, some animals may require more arguments than others; e.g. shift
+dolly = Llama("Dolly", "miniature llama", "morning", "hay", 1033)
+snappy = Crocodile("Snappy", "American Alligator", "fish", 1044)
+
+varmint_village.add_animal_pythonic(dolly)
+varmint_village.add_animal_type_check(dolly)
+varmint_village.add_animal_pythonic(snappy)
+
+#this is printing all the animals per attraction and showing it in the console with the iteration
+print(f"{varmint_village.attraction_name} is where you will find amazing animals that you can pet such as:")
+for animal in varmint_village.animals:
+    print(animal)
